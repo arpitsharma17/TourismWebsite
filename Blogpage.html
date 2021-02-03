@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="travel2.png"/>
+	<link rel="stylesheet" type="text/css" href="nav_bar.css">
+	<title>The Blog</title>
+	<style type="text/css">
+		
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("m.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 310%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	</style>
+</head>
+<body>
+	<div class="bg-image"></div>
+ <ul>
+  <li><a href="homepage.html" target="_self">HOME</a></li>
+  <li><a href="places.html" target="_self">PLACES</a></li>
+  <li><a class="active" href="blogpage.html" target="_self"> MY BLOG </a></li>
+  <li><a href="more.html" target="_self"> CONTACT ME </a></li>
+</ul>
+<br><br>
+<div class="bg-text">
+<p align="center"> <font size="7" face="impact">  THE BLOG </font> </p>
+<p align="center"> <font size="6" face="Arial" color="red"> <b> INDIA </b> </font> </p>
+<br> <br> <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="pic.jpg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="pic1.jpg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="pic2.jpeg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="pic3.jpg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="pic4.jpg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="2.jpeg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="4.jpeg" width="80%" height="500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="7.jpeg" width="80%" height="500px">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br><br><br><br>
+<table align="center" width="80%" frame="vsides" cellpadding="10">
+	<tr>
+		<td>
+<p align="justify"> <font color="white" size="3"><i>India is one of the oldest countries in the world, full of charming and attractive historical sites and challenging and mysterious stories that were laid in the foundation of Indian cities, regions and even buildings. India is the country of contrasts from architectural and cultural perspectives. If you want to amuse yourself with food, culture, language, clothing and various traditions, India is the right place for you to visit. With the population of over one billion people, India is very multicultural and each of the twenty eight states in the country has its unique identity that determines and directs its history. 
+</br> </br></br>
+India is the motherland of such famous people as Mahatma Ghandi, Siddhartha, Tata and the others. Everybody knows and heard the names of Taj Mahal, Mumbai, Great Indian Himalayas and Bengal Tiger, which became the icons of India tourism. For those who prefer beach and sun tourism India is ready to offer famous Goa and Kerala Beaches with more than hundred kilometres long sea line.
+</br></br></br>
+For visitors who prefer something exotic, India is opening the doors of the Khajuraho temples with its magnificent arts of early medieval period. Constructed back in the ninth and tenth centuries, these buildings keep the history of India and will not leave even the most demanding tourist uninterested.</i>
+</font></p>
+</td>
+</tr>
+</table>
+<br><br>
+<p align="center"> <font size="6" face="impact"> FAMOUS TRAVEL EXPERIENCES </font> </p>
+<table width="100%" cellpadding="20">
+  <tr>
+    <td>
+    <p align="justify">  
+      <img src="shivya.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Shivya Nath </b> <br> </font>
+    <font size="3" color="white"> 
+Shivya Nath is a female adventurer on a mission to inspire other young women to travel solo and be independent. And that is exactly what she does through her award-winning blog, <a href="https://the-shooting-star.com/" target="_blank"> The Shooting Star </a>. In 2013, Nath received the title of ‘Best Travel Blogger’ at the Indian Blogger Awards for sharing her expertise and tips on how to travel like a local and find those off-the-beaten-track destinations. As someone who quit the corporate life to become a full-time traveler, Nath’s life story and adventures are inherently fascinating.
+</font>
+</p>
+</td>
+  <td>
+    <p align="justify">
+      <img src="goyal.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Anuradha Goyal </b> <br> </font>
+    <font size="3" color="white"> 
+      Blogging since 2004, Anuradha Goyal loves sharing ideas about her two biggest passions: traveling and reading. Goyal’s book reviews are all listed under AnuReviews, and her travel stories are on her other blog called <a href="https://www.inditales.com/about/" target="_blank"> Inditales </a>. Goyal gives a lot of practical information about travelling around India, including walking tours in some of the major Indian cities, and shares her stories related to international travels. Goyal is also the author of The Mouse Charmers—Digital Pioneers of India.
+</font>
+</p>
+</td>
+  </tr>
+  <tr>
+    <td>
+    <p align="justify">  
+      <img src="laksh.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Lakshmi Sharath </b> <br> </font>
+    <font size="3" color="white"> 
+Lakshmi Sharath is a multi-talented world traveler. On top of being a media professional, she is a full-time traveler, blogger, journalist and photographer. In her fantastic blog, <a href="https://lakshmisharath.com/" target="_blank"> Travel With Lakshmi </a>, Sharath shares both her worldwide experiences and her travels within India, and in 2008 she won the award for India’s Best Travel Blog of the Year. Throughout her blogging career, Sharath has worked with big brands such as Thomas Cook, Nokia Lumia, Airbnb and Virgin Atlantic.
+</font>
+</p>
+</td>
+  <td>
+    <p align="justify">
+      <img src="reddy.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Karthik Reddy </b> <br> </font>
+    <font size="3" color="white"> 
+After completing his MBA in 2012, Karthik Reddy decided to leave his comfort zone and start traveling. Reddy soon started his own travel blog,<a href="https://www.romancingtheplanet.com/" target="_blank"> Romancing The Planet </a>, to share travel stories, give advice and publish some of his favorite photos. This blogger has a love for world cuisines, discovering new cultures and meeting new people. To learn a little more on what to do or where to go, check out his blog. 
+</font>
+</p>
+</td>
+  </tr>
+  <tr>
+    <td>
+    <p align="justify">  
+      <img src="arnab.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Arnab Maity </b> <br> </font>
+    <font size="3" color="white"> 
+Arnab Maity’s blog,<a href="http://www.arnabmaity.com/" target="_blank"> The Wireless Wanderer </a>, has a beautiful story behind it. The blog began as a way to help Maity’s mother, who passed on her passion for traveling to him, travel virtually through her son’s words and pictures. However, as more and more readers began contacting Maity to tell him that The Wireless Wanderer actually inspired them to hit the road, the mission of the blog became bigger. Maity wants to show people that traveling can be inexpensive, that working people can travel too, and, finally, that the people you meet have some of the most incredible stories to share and valuable insights to offer.
+</font>
+</p>
+</td>
+  <td>
+    <p align="justify">
+      <img src="parna.jpg" height="20%" width="10%">
+    <font size="5" color="red"><b> Parnashree Devi </b> <br> </font>
+    <font size="3" color="white"> 
+Parnashree Devi, also known as Shree, is a travel blogger from Assam who is currently based in Delhi. Devi started <a href="http://www.traveldiaryparnashree.com/" target="_blank"> My Travel Diary </a> to share her personal travel stories; she loves exploring remote corners of the world where she meets local people, tastes the local cuisine and learns about different ways of life. Devi hopes that, through her blog, she can inspire others to pack their bags and travel out of their comfort zones.
+</font>
+</p>
+</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

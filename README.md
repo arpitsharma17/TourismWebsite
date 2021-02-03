@@ -1,2 +1,2 @@
 # TourismWebsite
-This is my web technologies project work which is tour and travel website.
+This is my web technologies project work which is a tour and travel website.
